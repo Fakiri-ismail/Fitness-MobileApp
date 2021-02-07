@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <PreferenceCategory android:title="General">
+        <ListPreference
+            android:defaultValue="@string/default_gallery_storage"
+            android:key="@string/key_tts_speed"
+            android:summary="@string/default_gallery_storage"
+            android:title="@string/title_gallery_storage"
+            android:entries="@array/pref_tts_entries"
+            android:entryValues="@array/pref_tts_values"/>
+
+
+
+        <ListPreference
+            android:defaultValue="3"
+            android:dialogTitle="@string/title_upload_quality"
+            android:entries="@array/pref_difficulty_entries"
+            android:entryValues="@array/pref_difficulty_values"
+            android:key="@string/key_upload_quality"
+            android:summary="@string/summary_upload_video_quality"
+            android:title="@string/title_upload_quality" />
+
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/pref_title_notifications">
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="@string/key_upload_over_wifi"
+            android:summary="@string/summary_upload_over_wifi"
+            android:title="@string/title_auto_upload" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/pref_header_about">
+
+        <Preference
+            android:selectable="false"
+            android:summary="@string/summary_about" />
+
+        <Preference
+            android:summary="@string/app_version"
+            android:title="@string/title_version"
+            />
+
+        
+
+        <!-- preference opens url in browser -->
+        <Preference
+            android:summary="@string/summary_faq"
+            android:title="@string/title_faq">
+
+        </Preference>
+
+        <Preference android:title="@string/privacy_policy">
+
+        </Preference>
+
+        <Preference android:title="@string/title_terms">
+
+        </Preference>
+    </PreferenceCategory>
+
+</PreferenceScreen>
